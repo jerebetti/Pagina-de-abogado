@@ -1,23 +1,23 @@
 <!DOCTYPE HTML>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ $title ?? 'gabriel betti ' }}</title>
+    <title>Gabriel Betti - {{ $title ?? 'Portfolio' }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ $description ?? 'Free HTML5 Website Template by FreeHTML5.co' }}" />
-    <meta name="keywords" content="{{ $keywords ?? 'free website templates, html5, css3, responsive' }}" />
-    <meta name="author" content="FreeHTML5.co" />
+    <meta name="description" content="{{ $description ?? 'Personal portfolio of Gabriel Betti' }}" />
+    <meta name="keywords" content="{{ $keywords ?? 'portfolio, Gabriel Betti,lawyer.' }}" />
+    <meta name="author" content="Gabriel Betti" />
 
     <!-- Metaetiquetas sociales -->
-    <meta property="og:title" content="{{ $ogTitle ?? '' }}" />
-    <meta property="og:image" content="{{ $ogImage ?? '' }}" />
-    <meta property="og:url" content="{{ $ogUrl ?? '' }}" />
-    <meta property="og:site_name" content="{{ $ogSiteName ?? '' }}" />
-    <meta property="og:description" content="{{ $ogDescription ?? '' }}" />
-    <meta name="twitter:title" content="{{ $twitterTitle ?? '' }}" />
-    <meta name="twitter:image" content="{{ $twitterImage ?? '' }}" />
-    <meta name="twitter:url" content="{{ $twitterUrl ?? '' }}" />
+    <meta property="og:title" content="{{ $ogTitle ?? 'Gabriel Betti Portfolio' }}" />
+    <meta property="og:image" content="{{ $ogImage ?? 'link-to-image.jpg' }}" />
+    <meta property="og:url" content="{{ $ogUrl ?? 'http://gabrielbetti.com' }}" />
+    <meta property="og:site_name" content="{{ $ogSiteName ?? 'Gabriel Betti Portfolio' }}" />
+    <meta property="og:description" content="{{ $ogDescription ?? 'Discover the works of Gabriel Betti,lawyer.' }}" />
+    <meta name="twitter:title" content="{{ $twitterTitle ?? 'Gabriel Betti Portfolio' }}" />
+    <meta name="twitter:image" content="{{ $twitterImage ?? 'link-to-image.jpg' }}" />
+    <meta name="twitter:url" content="{{ $twitterUrl ?? 'http://gabrielbetti.com' }}" />
     <meta name="twitter:card" content="summary_large_image" />
     <!-- Agregar preload en el head -->
     <link rel="preload" href="{{ asset('assets/images/fondo2-c.webp') }}" as="image">
@@ -49,7 +49,9 @@
     <!--[if lt IE 9]>
     <script src="{{ asset('assets/js/respond.min.js') }}"></script>
     <![endif]-->
-<!-- Google tag (gtag.js) el problema que tiene que estar subido
+    <!-- Google Analytics -->
+    
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF0SL1TR5X"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -58,7 +60,6 @@
 
   gtag('config', 'G-RF0SL1TR5X');
 </script>
-	-->
 </head>
 <body>
 <div class="gtco-loader"></div>
@@ -72,11 +73,11 @@
                     </div>
                     <div class="col-xs-10 text-right menu-1 main-nav">
                         <ul>
-                            <li class="active"><a href="#gtco-hero" data-nav-section="home">inicio</a></li>
-                            <li><a href="#gtco-about" data-nav-section="about">personal</a></li>
+                            <li class="active"><a href="#gtco-hero" data-nav-section="home">Inicio</a></li>
+                            <li><a href="#gtco-about" data-nav-section="about">Personal</a></li>
                             <li><a href="#gtco-our-team" data-nav-section="our-team">Casos relevantes</a></li>
-                            <li><a href="#gtco-practice-area" data-nav-section="practice-area">titulo y capacitaciones</a></li>
-                            <li><a href="#gtco-work" data-nav-section="work">trabajos</a></li>
+                            <li><a href="#gtco-practice-area" data-nav-section="practice-area">Titulos y capacitaciones</a></li>
+                            <li><a href="#gtco-work" data-nav-section="work">Trabajos</a></li>
                             <li class="btn-cta"><a href="#gtco-contact" data-nav-section="contact"><span>Contacto</span></a></li>
                         </ul>
                     </div>
@@ -106,7 +107,7 @@
                     <div class="gtco-video-container" id="videoContainer" style="display: none;">
                         <button id="closeButton" class="close-button">✖</button>
                         <video id="videoPlayer" controls preload="metadata">
-                            <source src="{{ asset('assets/images/video-amplificado-c.mp4') }}" type="video/mp4">
+                            <source src="{{ asset('assets/images/videofinal.mp4') }}" type="video/mp4">
                             Tu navegador no soporta la etiqueta de video.
                         </video>
                     </div>
@@ -545,7 +546,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
-	<!-- de 40 a 65 de rendimiento y antes estaba 30,doy por finalizado la optimizacion.-->
+	<!-- de 60 a 75 de rendimiento en celular,antes estaba 30,doy por finalizado la optimizacion.-->
 
 				</div>
 				<div class="col-md-4 col-md-pull-6 animate-box">
@@ -553,7 +554,7 @@ document.addEventListener('DOMContentLoaded', function () {
 						<ul>						
 						    <li class="address">
                                <a href="https://www.google.com/maps/search/?api=1&query=Vera+Mujica+577,+S2179+Bombal,+Santa+Fe" target="_blank">Vera Mujica 577, S2179 Bombal, Santa Fe</a></li>
-							   <li class="phone"><a href="tel://549346540-8026">+54 9 346 540-8026</a></li>
+							   <li class="phone"><a href="tel://549341641-8855">+54 9 341 641-8855</a></li>
 							   <li class="email"><a href="mailto:paginadegabrielbetti@gmail.com">paginadegabrielbetti@gmail.com</a></li>						
 						</ul>
 					</div>

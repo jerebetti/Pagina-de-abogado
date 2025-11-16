@@ -16,10 +16,21 @@ use App\Http\Controllers\FormularioController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('app'); // La vista principal se llamará "template"
-});
+    return view('index');
+})->name('home');
+
+Route::get('/blog', function () {
+    return view('blog');
+})->name('blog');
+
+Route::get('/single', function () {
+    return view('single');
+})->name('single');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
 
 // Verifica que tienes algo similar a esto en tus rutas para archivos estáticos:
 Route::get('assets/{path}', function ($path) {
